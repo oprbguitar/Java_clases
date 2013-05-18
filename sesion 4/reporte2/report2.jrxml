@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d5399ab0-82f4-44e4-8faf-458453cb4f96">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select employee_id,last_name,first_name,job_title,department_name from employees inner join jobs on jobs.job_id=employees.job_id inner join departments on departments.department_id=employees.department_id]]>
+	</queryString>
+	<field name="EMPLOYEE_ID" class="java.math.BigDecimal"/>
+	<field name="LAST_NAME" class="java.lang.String"/>
+	<field name="FIRST_NAME" class="java.lang.String"/>
+	<field name="JOB_TITLE" class="java.lang.String"/>
+	<field name="DEPARTMENT_NAME" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement uuid="2b6fc66f-a448-4399-a910-5df483408c63" x="173" y="17" width="242" height="42" forecolor="#3366FF" backcolor="#0066FF"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="002915a1-f548-4109-81d0-0062537f2803" x="217" y="28" width="159" height="31"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMPRESA MORE]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="df32d3e2-5098-484e-a75b-2ed7a137e812" x="421" y="6" width="96" height="62"/>
+				<imageExpression><![CDATA["H:\\Users\\Public\\Pictures\\Sample Pictures\\Penguins.jpg"]]></imageExpression>
+			</image>
+			<componentElement>
+				<reportElement uuid="a66c8d8a-8506-4312-a547-35982a7daef4" x="8" y="17" width="135" height="50"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="2of7" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA["1234"]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="01771a9c-a33e-457b-a3ea-ef1c1d82da4e" x="42" y="6" width="187" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE EMPLEADOS]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement uuid="1e9820ec-6dc7-45a8-8bc2-e2feeca401a0" x="13" y="20" width="100" height="20" backcolor="#3366FF"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="e7a3befd-62fe-4186-9a5c-5e2a094341c1" x="121" y="20" width="100" height="20" backcolor="#3366FF"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="b0d43d76-815c-4486-8289-0d4aca9331ef" x="228" y="20" width="100" height="20" backcolor="#3366FF"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="080d0715-adc9-4ebc-b844-e91cae59b5b6" x="339" y="20" width="81" height="20" backcolor="#3366FF"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="edf94b3d-b1a1-4e96-83b0-6d8852f39ef8" x="434" y="19" width="109" height="20" backcolor="#3366FF"/>
+			</rectangle>
+			<line>
+				<reportElement uuid="af837be6-20fe-48dc-96ae-3b7cf0f41fb7" x="24" y="0" width="509" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="b9a17166-0867-493a-84c6-0f5e43952b58" x="13" y="47" width="509" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="3b16663f-c38e-4b0c-b105-bcb2230dca4d" x="13" y="1" width="509" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="17bc493f-b6f7-408b-bcbb-7133ccc54c77" x="40" y="21" width="57" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CÒDIGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9b2676c2-9689-42bd-9289-cf31e3028a9e" x="143" y="24" width="74" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[APELLIDO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f9558505-df61-41ed-b6a9-3945c5caeded" x="251" y="23" width="57" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ef7bf32c-07a8-46a4-811c-c1106c1c32ba" x="358" y="22" width="57" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CARGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="779f31ca-263b-4988-a66a-5683fb749a26" x="438" y="24" width="105" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DEPARTAMENTO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement uuid="0acae582-bae0-4773-8558-459ea72e482f" x="8" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{EMPLOYEE_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8faa309e-cdd0-43f8-8c51-38da31fe86be" x="119" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{LAST_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f8b7f045-e1fb-49f8-a29f-d1dac1aed186" x="227" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{FIRST_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7ac0eac9-780c-47e6-b28b-877556b9962e" x="332" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{JOB_TITLE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8993911d-0309-4425-a68f-9fb4ecdf3c5a" x="438" y="0" width="117" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{DEPARTMENT_NAME}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="de8ed486-a753-4972-a8c2-ac882a560386" x="43" y="21" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5d48dd70-6489-41a0-a052-e8a8a9988836" x="409" y="23" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="309d4507-25d5-46ce-bedb-9ef92f63bd6c" x="489" y="23" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="5d89f146-bfbe-4e2b-a71c-1ba069319750" x="20" y="0" width="509" height="1"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
